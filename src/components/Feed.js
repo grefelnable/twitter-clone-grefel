@@ -1,5 +1,6 @@
 import React from "react"
 import tw from "tailwind-styled-components"
+import Post from "./Post"
 import Tweetbox from "./Tweetbox"
 
 const Feed = () => {
@@ -9,11 +10,11 @@ const Feed = () => {
       <FeedHeader>
         <FeedTitle>Home</FeedTitle>
       </FeedHeader>
+
       {/* tweet box */}
       <Tweetbox />
-      {/* post */}
-      {/* post */}
-      {/* post */}
+
+      <Post />
     </FeedContainer>
   )
 }
@@ -21,7 +22,7 @@ const Feed = () => {
 export default Feed
 
 const FeedContainer = tw.section`
-flex-[0.86] md:flex-[0.5] md:border-r md:border-zinc-500
+flex-[0.86] md:flex-[0.5] border-r border-zinc-500
 min-w-fit overflow-y-scroll
 hide-scrollbar
 `
